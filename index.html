@@ -1,1 +1,148 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" id="estilo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/74e0a5e067.js" crossorigin="anonymous"></script>
+    <title>Mate Box</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="navbar">
+          <div class="container nav-container">
+              <input class="checkbox" type="checkbox" name="" id="" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>
+            <div class="logo">
+              <h1>Mate Box</h1>
+            </div>
+            <div class="menu-items">
+              <li><a href="#banner">Quienes somos</a></li>
+              <li><a href="#products">Nuestros productos</a></li>
+              <li><a href="#contact">Contactanos</a></li>
+              <li><a href="#boton" id="nocturno">Modo nocturno</a></li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="banner" id="banner">
+        <div id="titulo">
+            <h1 id="matebox">Mate Box</h1>
+        </div>
+    </div>
+    <div class="quienes">
+        <div id="about">
+            <h2>Quienes somos</h2>
+        </div>
+        <div id="texto">
+            <p>Somos un dúo que se dedica a ayudarte a mejorar tu experiencia a la hora de tomar mate, y por qué no, a regalarle a esa persona especial 
+            un mate de excelente calidad para que disfrute a diario y te tenga siempre presente. Nosotros somos Luana Geymonat y Lucas Alessandroni, 
+            y somos de la ciudad de La Plata.</p>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="card">
+            <div class="slide slide1">
+                <div class="content">
+                    <img src="images/luli.jpg" alt="" id="luli">
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="content text-content">
+                    <h3>Holis!</h3>
+                    <p>Soy <br><a href="https://www.instagram.com/geymonatluana/" target="_blank"><i class="fa-brands fa-instagram"></i></a> Luana Geymonat</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="slide slide1">
+                <div class="content">
+                    <img src="images/lucas.jpg" alt="" id="lucas">
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="content text-content">
+                    <h3>
+                        Hola!
+                    </h3>
+                    <p>Soy <br><a href="https://www.instagram.com/lucasalessandroni_/" target="_blank"><i class="fa-brands fa-instagram"></i></a> Lucas Alessandroni</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id="products"></div>
+    <section class="productos">
+        <h2 id="titulo-productos">Nuestros productos</h2>
+                <div id="p1">
+                    <h3 id="titulo-mates">Mates</h3>
+                    <img src="images/turquesa.jpeg" class="producto" id="producto1">
+                    <p>Mates térmicos con cámara de aire. Fácil extraccion de yerba. No necesita curado ni genera hongos. Son de facil lavado y super resistentes. Mejora la duracion de la yerba sin lavarse.</p>
+                    <a href="#" id="leer1">Leer más</a>
+                </div>
+                <div id="p2">
+                    <h3 id="titulo-sets">Sets materos</h3>
+                    <img src="images/equip.jpeg" class="producto" id="producto2">
+                    <p>Sets completos que incluyen mate, azucarera y yerbera.</p>
+                    <a href="#" id="leer2">Leer más</a>
+                </div>
+                <div id="p3">
+                    <h3 id="titulo-cajas">Cajas</h3>
+                    <img src="images/Cajas.jpeg" alt="Caja de productos" class="producto" id="producto3">
+                    <p>Cajas a pedido con mates, equipos, golosinas, etc.</p>
+                    <a href="#" id="leer3">Leer más</a>
+                </div>
+    </section>
+    <div id="contact"></div>
+    <section id="Contactanos">
+        <h2>Contactanos</h2>
+        <div class="contacto">
+            <form action="#" id="form">
+                <div class="form nombre" id="form-nombre">
+                    <label for="" class="label">Ingresá tu nombre</label><br>
+                    <input type="text" class="input" id="input-nombre" placeholder="Máximo 20 caracteres">
+                    <!-- <p id="error1"></p> -->
+                </div>
+                <div class="form texto" id="form-texto">
+                    <label for="" class="label">Ingresá tu mail</label><br>
+                    <input type="text" class="input" id="input-mail" placeholder="Ingresa un formato de mail válido">
+                    <!-- <p id="error2"></p> -->
+                </div>
+                <div class="form consulta" id="form-consulta">
+                    <label for="" class="label">Hacenos tu consulta</label><br>
+                    <input type="text" class="input" id="input-consulta" placeholder="Máximo 500 caracteres"><br>
+                    <button type="submit" class="submit" onclick="enviarConsulta(event)">Enviar</button> <br>
+                    <p id="exito"></p>
+                </div>
+                <div class="error">
+                    <p id="error3"></p>
+                </div>
+                <div class="prueba"></div>
+            </form>
+            <div class="ubicacion">
+                <h2>Nuestra ubicación</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.989903053641!2d-57.98301658467811!3d-34.93179018243762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7dc3ebb3aef%3A0x176ab89a7e26c2be!2sC.%2043%201781%2C%20B1902AFQ%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1653261921819!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="frame"></iframe>            </div>
+            </div>
+    </section>
+    <div class="dropdown">
+        <a href="https://wa.me/5492215606071?text=Quiero%20saber%20mas%20sobre%20los%20mates%20que%20vendes" target="_blank" id="wa"><i class="fa-brands fa-whatsapp whatsapp"></i></a>
+        <div class="dropdown-content">
+            <p id="p4">Escribinos a WhatsApp!</p>
+        </div>
+    </div>
+    <footer>
+        <p class="foot">Mate Box <span><i class="fa-solid fa-copyright"></i></span></p>
+        <p class="foot">Todos los derechos reservados.</p>
+    </footer>
+    <button type="button" id="boton" hidden>Cambiar estilos</button>
+<script src="./js/script.js"></script>
+</body>
+</html>
