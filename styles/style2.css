@@ -677,13 +677,13 @@ h2{
 #frame{
     border-radius: 5px;
 }
-.insta{
+p > a > i{
     color: white;
     transition: .5s;
 }
-.insta:hover{
+p > a > i:hover{
     color: rgb(159, 24, 185);
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 .foot2{
     font-size: 1.3rem;

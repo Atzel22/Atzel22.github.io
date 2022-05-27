@@ -688,11 +688,11 @@ h2{
 #frame{
     border-radius: 5px;
 }
-#insta{
+p > a > i:hover{
     color: black!important;
     transition: .5s;
 }
-#insta:hover{
+p > a > i:hover{
     color: rgb(159, 24, 185)!important;
     transform: scale(1.2);
 }
