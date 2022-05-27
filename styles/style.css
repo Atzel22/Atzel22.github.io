@@ -593,7 +593,7 @@ section > div > h3 {
     border-radius: 10px;
 }
 
-.fa-instagram{
+.insta-card{
     color: rgb(159, 24, 185);
     text-decoration: none;
 }
@@ -688,11 +688,11 @@ h2{
 #frame{
     border-radius: 5px;
 }
-#insta{
+.insta{
     color: black;
     transition: .5s;
 }
-#insta:hover{
+.insta:hover{
     color: rgb(159, 24, 185);
     transform: scale(1.1);
 }
