@@ -110,13 +110,9 @@ nav{
 }
 .navbar .menu-items {
   padding-top: 80px;
-  /* box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5); */
-  /* height: 100vh; */
   transform: translate(-150%);
   display: flex;
   flex-direction: column;
-  /* margin-left: -40px; */
-  /* padding-left: 50px; */
   transition: transform 0.5s ease-in-out;
   text-align: center;
   align-items: flex-end;
@@ -150,8 +146,7 @@ nav{
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   transform: rotate(-45deg);
 }
-/* .nav-container input[type="checkbox"]:checked ~ .logo{
-  /* display: none; */
+
 }
 @media screen  and (min-width: 600px){
     nav{
@@ -186,14 +181,12 @@ nav{
         text-decoration: none;
         transition: .5s;
     }
-    
     .navbar .menu-items {
         display: flex;
         flex-direction: row;
         height: 100%;
         align-items: center;
       }
-    
       .navbar .nav-container li {
         list-style: none;
         height: 100%;
@@ -211,13 +204,11 @@ nav{
         transition: background-size 300ms;
         flex-grow: 1;
       }
-    
       .navbar .nav-container a:hover{
         background-size: 100% 100%;
         background-position-x: left;
         color: rgb(159, 24, 185);
     }
-    
     .nav-container .checkbox {
         position: absolute;
         display: block;
@@ -229,7 +220,6 @@ nav{
         opacity: 0;
         cursor: pointer;
       }
-    
       .nav-container .hamburger-lines {
         display: block;
         height: 26px;
@@ -242,7 +232,6 @@ nav{
         flex-direction: column;
         justify-content: space-between;
       }
-    
       .logo {
         position:absolute;
         left: -1000px;
@@ -257,12 +246,13 @@ img {
 #matebox {
     font-size: 4rem;
     text-align: center;
-    color: rgb(159, 24, 185);
+    color: rgb(255, 255, 255);
 }
 h2{
     color: rgb(255, 255, 255);
     height: fit-content;
 }
+
 h3{
     font-size: 3rem;
     color: rgb(255, 255, 255);
@@ -435,9 +425,13 @@ footer{
     text-align: center;
     color: rgb(255, 255, 255);
     background-color: #000000;
+    border-radius: 5px;
 }
 .foot{
     margin: 0 auto;
+}
+.foot2{
+    font-size: 1.3rem;
 }
 .fa-solid{
     transition: .5s;
@@ -621,13 +615,10 @@ section > div > h3 {
     }
     #frame{
         margin-top: 2%;
+        max-width: 350px;
     }
 }
-.prueba{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
+
 .input{
     width: 90%;
     height: 2.5rem;
@@ -685,4 +676,12 @@ h2{
 }
 #frame{
     border-radius: 5px;
+}
+#insta{
+    color: white;
+    transition: .5s;
+}
+#insta:hover{
+    color: rgb(159, 24, 185);
+    transform: scale(1.1);
 }
