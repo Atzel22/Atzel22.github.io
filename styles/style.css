@@ -688,13 +688,13 @@ h2{
 #frame{
     border-radius: 5px;
 }
-.insta{
-    color: black;
+#insta{
+    color: black!important;
     transition: .5s;
 }
-.insta:hover{
-    color: rgb(159, 24, 185);
-    transform: scale(1.1);
+#insta:hover{
+    color: rgb(159, 24, 185)!important;
+    transform: scale(1.2);
 }
 .foot2{
     font-size: 1.3rem;
